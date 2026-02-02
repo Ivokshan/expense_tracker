@@ -11,6 +11,7 @@ from datetime import date
 from .models import UserSalary, Expense
 from .base import ActingUserMixin
 from django.contrib.auth.models import User 
+# test
 
 class ExpenseViewSet(ActingUserMixin, ModelViewSet):
     serializer_class = ExpenseSerializer
