@@ -110,5 +110,4 @@ class UserRegisterSerializer(serializers.ModelSerializer):
             user=user,
             amount=salary_amount
         )
-
-        return user
+        return user 

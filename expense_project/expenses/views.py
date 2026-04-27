@@ -105,7 +105,7 @@ class ExpenseSummaryView(APIView):
 
         categories = {i["category"]: i["total"] for i in category_summary}
 
-        monthly_totals = (
+        monthly_totals = (  
             expenses
             .annotate(month=TruncMonth("expense_date"))
             .values("month")
